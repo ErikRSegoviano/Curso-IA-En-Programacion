@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login/Register View -->
+        <div id="authView">
+            <div class="header">
+                <h1>🔐 User Management</h1>
+                <p>Accede o crea tu cuenta</p>
+                <div class="tabs">
+                    <div class="tab active" data-tab="login">Iniciar Sesión</div>
+                    <div class="tab" data-tab="register">Registrarse</div>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <!-- Login Form -->
+                <form id="loginForm" class="form active">
+                    <div class="alert alert-error" id="loginError"></div>
+                    <div class="alert alert-success" id="loginSuccess"></div>
+                    
+                    <div class="form-group">
+                        <label for="loginEmail">Correo Electrónico</label>
+                        <input type="email" id="loginEmail" required placeholder="ejemplo@email.com">
+                        <div class="error-message" id="loginEmailError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="loginPassword">Contraseña</label>
+                        <input type="password" id="loginPassword" required placeholder="••••••••">
+                        <div class="error-message" id="loginPasswordError"></div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="loginBtn">
+                        <span>Iniciar Sesión</span>
+                    </button>
+                </form>
+
+                <!-- Register Form -->
+                <form id="registerForm" class="form" style="display: none;">
+                    <div class="alert alert-error" id="registerError"></div>
+                    <div class="alert alert-success" id="registerSuccess"></div>
+                    <div class="progress-container" id="progressContainer" style="display: none;">
+                        <div class="progress-bar" id="progressBar"></div>
+                        <span class="progress-text" id="progressText">Redirigiendo en 15 segundos...</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="registerFullName">Nombre Completo</label>
+                        <input type="text" id="registerFullName" required placeholder="Juan Pérez">
+                        <div class="error-message" id="registerFullNameError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registerEmail">Correo Electrónico</label>
+                        <input type="email" id="registerEmail" required placeholder="ejemplo@email.com">
+                        <div class="error-message" id="registerEmailError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registerPassword">Contraseña</label>
+                        <input type="password" id="registerPassword" required placeholder="••••••••">
+                        <div class="error-message" id="registerPasswordError"></div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="registerBtn">
+                        <span>Crear Cuenta</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Dashboard View -->
+        <div id="dashboardView" class="dashboard">
+            <div class="dashboard-icon">🎉</div>
+            <h2>¡Bienvenido!</h2>
+            <div class="user-info">
+                <h3 id="userName">Nombre del Usuario</h3>
+                <p id="userEmail">usuario@email.com</p>
+            </div>
+            <p>Has iniciado sesión exitosamente</p>
+            <button class="btn btn-danger" id="logoutBtn">
+                Cerrar Sesión
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
