@@ -1,6 +1,6 @@
 # IA en Programación - Proyectos del Curso
 
-Este repositorio contiene todos los proyectos y subproyectos desarrollados como parte del curso **"IA en Programación"** de la plataforma [Playground Digital House](https://www.playgrounddigitalhouse.com/), que forma parte de la certificación oficial en **Inteligencia Artificial en Programación**.
+Este repositorio contiene todos los proyectos y subproyectos desarrollados como parte del curso **"IA en Programación"** de la plataforma [Playground Digital House](https://playground.digitalhouse.com/), que forma parte de la certificación oficial en **Inteligencia Artificial en Programación**.
 
 ## 📚 Sobre el Curso
 
@@ -159,7 +159,7 @@ docker-compose up --build
 
 ## 🔗 Enlaces Relacionados
 
-- [Playground Digital House](https://www.playgrounddigitalhouse.com/)
+- [Playground Digital House](https://playground.digitalhouse.com/)
 - [Curso: Fundamentos de Inteligencia Artificial](https://github.com/ErikRSegoviano/Curso-Fundamentos-De-IA)
 - [Perfil de GitHub](https://github.com/ErikRSegoviano)
 
